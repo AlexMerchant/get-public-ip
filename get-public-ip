@@ -1,0 +1,4 @@
+#!/bin/bash
+
+myIP=$(dig -4 +short A myip.opendns.com @resolver2.opendns.com)
+echo -e "$myIP"
