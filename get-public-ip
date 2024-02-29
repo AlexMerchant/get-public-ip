@@ -1,4 +1,16 @@
 #!/bin/bash
 
+# 
 myIP=$(dig -4 +short A myip.opendns.com @resolver2.opendns.com)
 echo -e "$myIP"
+
+# Check if the confiuguration file is present
+    # if not, create a new configuration file
+        # during creation of file
+            # retrieve public IP, store in variable
+            # set an empty variable for the CF API token
+            # set an empty variable for the CF zone id
+            # set an empty variable for the CF record id
+
+    # if exists, read the file and check the variable value of the stored for the public IP
+        #  store 
