@@ -7,5 +7,15 @@ This aim of the script is to have it fulfill the following tasks:
     - Or perhaps have it check for environmenttal variables configured for the purpose of this script in PATH?
 
  - Use the OpenDNS resolver to retrieve the server's public-facing IP address
+
  - Compare the most recently retrieved IP address with the last IP address stored in the configuration to check for a value change
- - If the values differ, then update the IP address iun Cloudflare
+    - If the values differ
+        - Update the IP address in Cloudflare
+        - Log the change in a logfile
+        - Add the value in the Google Sheet Log
+
+    - If the values are the same
+        - Log the check in the logfile, but note that nothing changed
+
+
+        
